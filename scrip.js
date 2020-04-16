@@ -1,4 +1,5 @@
 var selectedRow = null
+var datos = [];
 
 function onFormSubmit() {
 
@@ -8,6 +9,10 @@ function onFormSubmit() {
     else
         updateRecord(fromData);
     resetForm();
+}
+
+function save() {
+
 }
 
 
@@ -56,10 +61,13 @@ function insertNewRecord(data) {
     cell11.innerHTML = data.s1;
     cell12 = newRow.insertCell(11);
     cell12.innerHTML = data.s2;
-    cell13 = newRow.insertCell(12);
-    cell13.innerHTML =  `<a onClick="onEdit(this)">Edit</a>
+    cell14 = newRow.insertCell(13);
+    cell13.innerHTML = localStorage.getItem("usuarioActual");
+    cell14 = newRow.insertCell(14);
+    cell14.innerHTML =  `<a onClick="onEdit(this)">Edit</a>
                          <a onClick="onDelete(this)">Delete</a>`;
-
+    datos.push(newRow.value);
+    console.log(newRow);
 
 }
 
