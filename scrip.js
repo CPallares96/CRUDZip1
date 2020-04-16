@@ -62,8 +62,6 @@ function insertNewRecord(data) {
     cell13.innerHTML =  `<a onClick="onEdit(this)">Edit</a>
                          <a onClick="onDelete(this)">Delete</a>`;
     console.log(data.value);
-    registros.push(data.value);
-    localStorage.setItem('reg', registros);
 
 }
 
