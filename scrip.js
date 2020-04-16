@@ -1,5 +1,4 @@
 var selectedRow = null
-const registros = [];
 
 function onFormSubmit() {
 
