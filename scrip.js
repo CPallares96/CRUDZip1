@@ -60,7 +60,7 @@ function insertNewRecord(data) {
     cell13 = newRow.insertCell(12);
     cell13.innerHTML =  `<a onClick="onEdit(this)">Edit</a>
                          <a onClick="onDelete(this)">Delete</a>`;
-    localStorage.setItem('reg', data);
+    localStorage.setItem('reg', data.value);
 
 }
 
