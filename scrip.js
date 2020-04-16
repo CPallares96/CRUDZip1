@@ -1,5 +1,4 @@
 var selectedRow = null
-var datos = [];
 
 function onFormSubmit() {
 
@@ -11,9 +10,6 @@ function onFormSubmit() {
     resetForm();
 }
 
-function save() {
-
-}
 
 
 
