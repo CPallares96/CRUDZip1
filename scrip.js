@@ -3,6 +3,7 @@ var selectedRow = null
 function onFormSubmit() {
 
     var fromData = readFormData();
+    console.log(fromData);
     if (selectedRow == null)
         insertNewRecord(fromData);
     else
